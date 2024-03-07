@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Manipal Capstone" >
+
+	<listeners>
+		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Manipal Capstone Test Cases">
+		<classes>
+			<class name="com.xyz.qa.testcases.HomepageNavigationTest"></class>
+			<class name="com.xyz.qa.testcases.CustomerLoginInfoTest"></class>
+			<class name="com.xyz.qa.testcases.DepositWithdrawalTest"></class>
+			<class name="com.xyz.qa.testcases.TransactionFlowTest"></class>
+			<class name="com.xyz.qa.testcases.AddCustomerTest"></class>
+			<class name="com.xyz.qa.testcases.OpenAccountTest"></class>
+			<class name="com.xyz.qa.testcases.ExistingcustTest"></class>
+			<class name="com.xyz.qa.testcases.CustomerCompleteInfoTest"></class>
+			
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-03-07T21:02:57 IST" name="Manipal Capstone" finished-at="2024-03-07T21:04:11 IST" duration-ms="74691">
+    <groups>
+    </groups>
+    <test started-at="2024-03-07T21:02:57 IST" name="Manipal Capstone Test Cases" finished-at="2024-03-07T21:04:11 IST" duration-ms="74691">
+      <class name="com.xyz.qa.testcases.CustomerLoginInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.CustomerLoginInfoTest@3f6b0be5]" started-at="2024-03-07T21:03:04 IST" name="setUp" finished-at="2024-03-07T21:03:08 IST" duration-ms="4183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCustomerLoginFlow()[pri:0, instance:com.xyz.qa.testcases.CustomerLoginInfoTest@3f6b0be5]" started-at="2024-03-07T21:03:08 IST" name="testCustomerLoginFlow" finished-at="2024-03-07T21:03:11 IST" duration-ms="3079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerLoginFlow -->
+      </class> <!-- com.xyz.qa.testcases.CustomerLoginInfoTest -->
+      <class name="com.xyz.qa.testcases.HomepageNavigationTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.HomepageNavigationTest@759d26fb]" started-at="2024-03-07T21:02:57 IST" name="setUp" finished-at="2024-03-07T21:03:01 IST" duration-ms="4545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="Homepagefun()[pri:0, instance:com.xyz.qa.testcases.HomepageNavigationTest@759d26fb]" started-at="2024-03-07T21:03:01 IST" name="Homepagefun" finished-at="2024-03-07T21:03:04 IST" duration-ms="2452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Homepagefun -->
+      </class> <!-- com.xyz.qa.testcases.HomepageNavigationTest -->
+      <class name="com.xyz.qa.testcases.OpenAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.OpenAccountTest@a530d0a]" started-at="2024-03-07T21:03:50 IST" name="setUp" finished-at="2024-03-07T21:03:57 IST" duration-ms="6920" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="openaccount1()[pri:0, instance:com.xyz.qa.testcases.OpenAccountTest@a530d0a]" started-at="2024-03-07T21:03:57 IST" name="openaccount1" finished-at="2024-03-07T21:04:03 IST" duration-ms="5777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openaccount1 -->
+      </class> <!-- com.xyz.qa.testcases.OpenAccountTest -->
+      <class name="com.xyz.qa.testcases.AddCustomerTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.AddCustomerTest@2f217633]" started-at="2024-03-07T21:03:36 IST" name="setUp" finished-at="2024-03-07T21:03:39 IST" duration-ms="2676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcust1()[pri:1, instance:com.xyz.qa.testcases.AddCustomerTest@2f217633]" started-at="2024-03-07T21:03:39 IST" name="addcust1" finished-at="2024-03-07T21:03:43 IST" duration-ms="3697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcust1 -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.AddCustomerTest@2f217633]" started-at="2024-03-07T21:03:43 IST" name="setUp" finished-at="2024-03-07T21:03:48 IST" duration-ms="5603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="addcustomerinvalid()[pri:2, instance:com.xyz.qa.testcases.AddCustomerTest@2f217633]" started-at="2024-03-07T21:03:48 IST" name="addcustomerinvalid" finished-at="2024-03-07T21:03:50 IST" duration-ms="2058" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addcustomerinvalid -->
+      </class> <!-- com.xyz.qa.testcases.AddCustomerTest -->
+      <class name="com.xyz.qa.testcases.ExistingcustTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.ExistingcustTest@48f278eb]" started-at="2024-03-07T21:03:30 IST" name="setUp" finished-at="2024-03-07T21:03:33 IST" duration-ms="2813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="existing1()[pri:0, instance:com.xyz.qa.testcases.ExistingcustTest@48f278eb]" started-at="2024-03-07T21:03:33 IST" name="existing1" finished-at="2024-03-07T21:03:36 IST" duration-ms="3468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existing1 -->
+      </class> <!-- com.xyz.qa.testcases.ExistingcustTest -->
+      <class name="com.xyz.qa.testcases.TransactionFlowTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.TransactionFlowTest@1da2cb77]" started-at="2024-03-07T21:03:20 IST" name="setUp" finished-at="2024-03-07T21:03:23 IST" duration-ms="2309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCustomerLoginFlow()[pri:0, instance:com.xyz.qa.testcases.TransactionFlowTest@1da2cb77]" started-at="2024-03-07T21:03:23 IST" name="testCustomerLoginFlow" finished-at="2024-03-07T21:03:30 IST" duration-ms="7419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerLoginFlow -->
+      </class> <!-- com.xyz.qa.testcases.TransactionFlowTest -->
+      <class name="com.xyz.qa.testcases.CustomerCompleteInfoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.CustomerCompleteInfoTest@1a18644]" started-at="2024-03-07T21:04:03 IST" name="setUp" finished-at="2024-03-07T21:04:06 IST" duration-ms="2581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="customercompleteinfo1()[pri:0, instance:com.xyz.qa.testcases.CustomerCompleteInfoTest@1a18644]" started-at="2024-03-07T21:04:06 IST" name="customercompleteinfo1" finished-at="2024-03-07T21:04:11 IST" duration-ms="5642" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- customercompleteinfo1 -->
+      </class> <!-- com.xyz.qa.testcases.CustomerCompleteInfoTest -->
+      <class name="com.xyz.qa.testcases.DepositWithdrawalTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.xyz.qa.testcases.DepositWithdrawalTest@611889f4]" started-at="2024-03-07T21:03:11 IST" name="setUp" finished-at="2024-03-07T21:03:14 IST" duration-ms="2723" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testCustomerLoginFlow()[pri:0, instance:com.xyz.qa.testcases.DepositWithdrawalTest@611889f4]" started-at="2024-03-07T21:03:14 IST" name="testCustomerLoginFlow" finished-at="2024-03-07T21:03:20 IST" duration-ms="6691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCustomerLoginFlow -->
+      </class> <!-- com.xyz.qa.testcases.DepositWithdrawalTest -->
+    </test> <!-- Manipal Capstone Test Cases -->
+  </suite> <!-- Manipal Capstone -->
+</testng-results>
