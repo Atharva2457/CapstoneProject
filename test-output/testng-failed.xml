@@ -4,14 +4,20 @@
   <listeners>
     <listener class-name="com.qa.ExtentReportListener.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Manipal Capstone Test Cases(failed)">
+  <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="com.xyz.qa.testcases.TransactionFlowTest">
+      <class name="com.xyz.qa.testcases.CustomerCompleteInfoTest">
         <methods>
-          <include name="testCustomerLoginFlow"/>
+          <include name="setUp"/>
+          <include name="customercompleteinfo1"/>
+        </methods>
+      </class> <!-- com.xyz.qa.testcases.CustomerCompleteInfoTest -->
+      <class name="com.xyz.qa.testcases.AddCustomerTest">
+        <methods>
+          <include name="addcustomerinvalid"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.xyz.qa.testcases.TransactionFlowTest -->
+      </class> <!-- com.xyz.qa.testcases.AddCustomerTest -->
     </classes>
-  </test> <!-- Manipal Capstone Test Cases(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Manipal Capstone] -->

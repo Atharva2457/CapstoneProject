@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Manipal_Capstone" class="navigator-link">
-              <span class="suite-name border-passed">Manipal Capstone</span>
+              <span class="suite-name border-failed">Manipal Capstone</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods,   9 passed</span>
+                    <span class="method-stats">9 methods, 2 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Manipal_Capstone" class="hide-methods failed suite-Manipal_Capstone"> (hide)</a> <!-- hide-methods failed suite-Manipal_Capstone -->
+                      <a href="#" panel-name="suite-Manipal_Capstone" class="show-methods failed suite-Manipal_Capstone"> (show)</a> <!-- show-methods failed suite-Manipal_Capstone -->
+                    </span>
+                    <div class="method-list-content failed suite-Manipal_Capstone">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.AddCustomerTest" class="method navigator-link" hash-for-method="addcustomerinvalid">addcustomerinvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.CustomerCompleteInfoTest" class="method navigator-link" hash-for-method="customercompleteinfo1">customercompleteinfo1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Manipal_Capstone -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,16 +132,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.AddCustomerTest" class="method navigator-link" hash-for-method="addcustomerinvalid">addcustomerinvalid</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.CustomerCompleteInfoTest" class="method navigator-link" hash-for-method="customercompleteinfo1">customercompleteinfo1</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.ExistingcustTest" class="method navigator-link" hash-for-method="existing1">existing1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -133,12 +142,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.TransactionFlowTest" class="method navigator-link" hash-for-method="testCustomerLoginFlow">testCustomerLoginFlow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.CustomerLoginInfoTest" class="method navigator-link" hash-for-method="testCustomerLoginFlow">testCustomerLoginFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.CustomerLoginInfoTest" class="method navigator-link" hash-for-method="testCustomerLoginFlow">testCustomerLoginFlow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Manipal_Capstone" title="com.xyz.qa.testcases.TransactionFlowTest" class="method navigator-link" hash-for-method="testCustomerLoginFlow">testCustomerLoginFlow</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -158,9 +167,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Manipal_Capstone" class="panel Manipal_Capstone">
-          <div class="suite-Manipal_Capstone-class-passed">
+          <div class="suite-Manipal_Capstone-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.xyz.qa.testcases.CustomerCompleteInfoTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -169,29 +178,59 @@
                   <a name="customercompleteinfo1">
                   </a> <!-- customercompleteinfo1 -->
                   <span class="method-name">customercompleteinfo1</span>
+                  <div class="stack-trace">org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=122.0.6261.112)
+Build info: version: &apos;4.15.0&apos;, revision: &apos;1d14b5521b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b05fcd27216688370848b63479e1ee3f, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.112, chrome: {chromedriverVersion: 122.0.6261.57 (87957e464700..., userDataDir: C:\Users\athar\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55961}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55961/devtoo..., se:cdpVersion: 122.0.6261.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b05fcd27216688370848b63479e1ee3f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:680)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:684)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteAlert.getText(RemoteWebDriver.java:1273)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringAlert.getText(EventFiringWebDriver.java:838)
+	at com.xyz.qa.pages.BankManagerPage.customer(BankManagerPage.java:213)
+	at com.xyz.qa.testcases.CustomerCompleteInfoTest.customercompleteinfo1(CustomerCompleteInfoTest.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Manipal_Capstone-class-passed -->
-          <div class="suite-Manipal_Capstone-class-passed">
+          </div> <!-- suite-Manipal_Capstone-class-failed -->
+          <div class="suite-Manipal_Capstone-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.xyz.qa.testcases.DepositWithdrawalTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.xyz.qa.testcases.AddCustomerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCustomerLoginFlow">
-                  </a> <!-- testCustomerLoginFlow -->
-                  <span class="method-name">testCustomerLoginFlow</span>
+                  <a name="addcustomerinvalid">
+                  </a> <!-- addcustomerinvalid -->
+                  <span class="method-name">addcustomerinvalid</span>
+                  <div class="stack-trace">java.lang.AssertionError: Account is not added as the details are invalid expected [Please provide the valid Customer details] but found [Customer added successfully with customer id :6]
+	at com.xyz.qa.pages.BankManagerPage.invalid(BankManagerPage.java:107)
+	at com.xyz.qa.testcases.AddCustomerTest.addcustomerinvalid(AddCustomerTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Manipal_Capstone-class-passed -->
+          </div> <!-- suite-Manipal_Capstone-class-failed -->
           <div class="suite-Manipal_Capstone-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.xyz.qa.testcases.CustomerLoginInfoTest</span>
+              <span class="class-name">com.xyz.qa.testcases.DepositWithdrawalTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -214,6 +253,21 @@
                   <a name="Homepagefun">
                   </a> <!-- Homepagefun -->
                   <span class="method-name">Homepagefun</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Manipal_Capstone-class-passed -->
+          <div class="suite-Manipal_Capstone-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.xyz.qa.testcases.CustomerLoginInfoTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCustomerLoginFlow">
+                  </a> <!-- testCustomerLoginFlow -->
+                  <span class="method-name">testCustomerLoginFlow</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,13 +315,6 @@
                   <span class="method-name">addcust1</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="addcustomerinvalid">
-                  </a> <!-- addcustomerinvalid -->
-                  <span class="method-name">addcustomerinvalid</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Manipal_Capstone-class-passed -->
           <div class="suite-Manipal_Capstone-class-passed">
@@ -298,7 +345,7 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.qa.ExtentReportListener.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Manipal Capstone Test Cases&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.xyz.qa.testcases.HomepageNavigationTest&quot;/&gt;
       &lt;class name=&quot;com.xyz.qa.testcases.CustomerLoginInfoTest&quot;/&gt;
@@ -309,7 +356,7 @@
       &lt;class name=&quot;com.xyz.qa.testcases.ExistingcustTest&quot;/&gt;
       &lt;class name=&quot;com.xyz.qa.testcases.CustomerCompleteInfoTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Manipal Capstone Test Cases --&gt;
+  &lt;/test&gt; &lt;!-- Test1 --&gt;
 &lt;/suite&gt; &lt;!-- Manipal Capstone --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -321,7 +368,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Manipal Capstone Test Cases (8 classes)</span>
+                <span class="test-name">Test1 (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -351,44 +398,44 @@ data.addRows(9);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCustomerLoginFlow')
 data.setCell(0, 2, 'com.xyz.qa.testcases.TransactionFlowTest')
-data.setCell(0, 3, 7593);
+data.setCell(0, 3, 12167);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'customercompleteinfo1')
 data.setCell(1, 2, 'com.xyz.qa.testcases.CustomerCompleteInfoTest')
-data.setCell(1, 3, 6184);
+data.setCell(1, 3, 8204);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCustomerLoginFlow')
 data.setCell(2, 2, 'com.xyz.qa.testcases.DepositWithdrawalTest')
-data.setCell(2, 3, 6146);
+data.setCell(2, 3, 5923);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'openaccount1')
 data.setCell(3, 2, 'com.xyz.qa.testcases.OpenAccountTest')
-data.setCell(3, 3, 4417);
+data.setCell(3, 3, 5077);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'existing1')
 data.setCell(4, 2, 'com.xyz.qa.testcases.ExistingcustTest')
-data.setCell(4, 3, 3460);
+data.setCell(4, 3, 4613);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'addcustomerinvalid')
-data.setCell(5, 2, 'com.xyz.qa.testcases.AddCustomerTest')
-data.setCell(5, 3, 3293);
+data.setCell(5, 1, 'testCustomerLoginFlow')
+data.setCell(5, 2, 'com.xyz.qa.testcases.CustomerLoginInfoTest')
+data.setCell(5, 3, 2857);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testCustomerLoginFlow')
-data.setCell(6, 2, 'com.xyz.qa.testcases.CustomerLoginInfoTest')
-data.setCell(6, 3, 2950);
+data.setCell(6, 1, 'addcust1')
+data.setCell(6, 2, 'com.xyz.qa.testcases.AddCustomerTest')
+data.setCell(6, 3, 2781);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'Homepagefun')
-data.setCell(7, 2, 'com.xyz.qa.testcases.HomepageNavigationTest')
-data.setCell(7, 3, 2505);
+data.setCell(7, 1, 'addcustomerinvalid')
+data.setCell(7, 2, 'com.xyz.qa.testcases.AddCustomerTest')
+data.setCell(7, 3, 2317);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'addcust1')
-data.setCell(8, 2, 'com.xyz.qa.testcases.AddCustomerTest')
-data.setCell(8, 3, 2114);
+data.setCell(8, 1, 'Homepagefun')
+data.setCell(8, 2, 'com.xyz.qa.testcases.HomepageNavigationTest')
+data.setCell(8, 3, 1262);
 window.suiteTableData['Manipal_Capstone']= { tableData: data, tableDiv: 'times-div-Manipal_Capstone'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 45 seconds</span>
               <div id="times-div-Manipal_Capstone">
               </div> <!-- times-div-Manipal_Capstone -->
             </div> <!-- times-div -->
@@ -421,92 +468,96 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Homepagefun</span>
-                <span class="method-start">3696 ms</span>
+                <span class="method-start">6166 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.CustomerLoginInfoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">6207 ms</span>
+                <span class="method-start">7432 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCustomerLoginFlow</span>
-                <span class="method-start">8936 ms</span>
+                <span class="method-start">10143 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.DepositWithdrawalTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">11888 ms</span>
+                <span class="method-start">13002 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCustomerLoginFlow</span>
-                <span class="method-start">14164 ms</span>
+                <span class="method-start">15860 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.TransactionFlowTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20314 ms</span>
+                <span class="method-start">21785 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCustomerLoginFlow</span>
-                <span class="method-start">23006 ms</span>
+                <span class="method-start">24974 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.AddCustomerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">30602 ms</span>
+                <span class="method-start">37144 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addcust1</span>
-                <span class="method-start">36283 ms</span>
+                <span class="method-start">39989 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">38401 ms</span>
+                <span class="method-start">42773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">addcustomerinvalid</span>
-                <span class="method-start">41401 ms</span>
+                <span class="method-start">46570 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.OpenAccountTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">44696 ms</span>
+                <span class="method-start">48890 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">openaccount1</span>
-                <span class="method-start">47478 ms</span>
+                <span class="method-start">50921 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.ExistingcustTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">51899 ms</span>
+                <span class="method-start">56000 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">existing1</span>
-                <span class="method-start">54935 ms</span>
+                <span class="method-start">58592 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.xyz.qa.testcases.CustomerCompleteInfoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">58397 ms</span>
+                <span class="method-start">63208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">customercompleteinfo1</span>
-                <span class="method-start">61293 ms</span>
+                <span class="method-start">66313 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

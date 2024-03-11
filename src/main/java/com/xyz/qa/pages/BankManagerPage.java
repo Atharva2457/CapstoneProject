@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import com.xyz.qa.base.TestBase;
 
@@ -103,7 +104,7 @@ public class BankManagerPage extends TestBase {
 		// Handling alert
 		Alert alt = driver.switchTo().alert();
 		String altertext1 = alt.getText();
-		alt.accept();
+		Assert.assertEquals(altertext1, "Please provide the valid Customer details", "Account is not added as the details are invalid");
 		System.out.println(altertext1);
 		
 		driver.quit();
@@ -209,8 +210,10 @@ public class BankManagerPage extends TestBase {
 
 		WebElement visibledelbtn = waitForElementToBeVisible(deletebtn);
 		visibledelbtn.click();
-		System.out.println("Atharva Deshmukh is deleted:");
-		homebtn.click();
+		String confirmationalert = alt.getText();
+		Assert.assertEquals(confirmationalert, "Are you sure you want to delete the Record?", "Atharva Deshmukh is Deleted from the Customer Records");
+		alt.accept();
+		System.out.println("Atharva Deshumuk is Deleted from the Customer Records");
 		System.out.println("Home Button is clicked:");
 		driver.quit();
 
